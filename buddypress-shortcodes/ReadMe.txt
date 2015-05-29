@@ -1,5 +1,5 @@
 === BuddyPress Shortcodes===
-Contributors: webimetry-solutions,wordpress-authors
+Contributors: webimetry-solutions
 Donate link: http://wordpress.webimetry.com/
 Tags: buddypress , buddypress shortcodes
 Requires at least: 3.5
@@ -8,25 +8,31 @@ Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-An easy-to-use shortcodes plugin that helps you in building your own Social Network using BuddyPress Plugin.It gives you the option of using Shortcodes for BuddyPress plugin.
+A shortcodes plugin that helps you in building your own Social Network using BuddyPress Plugin.It gives you the option of using Shortcodes for BuddyPress plugin.
 
 == Description ==
 
-An easy-to-use shortcodes plugin that helps you in building your own Social Network using BuddyPress Plugin.It gives you the option of using Shortcodes for BuddyPress plugin.
+[BuddyPress Shortcodes](http://wordpress.webimetry.com/plugins/buddypress-shortcodes/ "BuddyPress Shortcodes – an easy to use shortcode to support your BuddyPress site") is an easy-to-use shortcodes plugin that helps you in building your own Social Network using BuddyPress Plugin.It gives you the option of using Shortcodes for BuddyPress plugin.
 
 Currently there are 6 shortcodes available in order to display BuddyPress Members and Groups in Carousel or Grid and Activities can be displayed in a Carousel or List.
 
 = Activity Shortcodes :- =
-Activity List - [webim_buddypress_activity title="Activity Shortcodes List" count="5"]
-Activity Carousel - [webim_activity_carousel count="12" color="#000"]
+Activity List - 
+`[webim_buddypress_activity title="Activity Shortcodes List" count="5"]`
+Activity Carousel - 
+`[webim_activity_carousel count="12" color="#000"]`
 
 = Members Shortcodes :- =
-Members Grid - [webim_members_grid title="Alphabetical" type="alphabetical" col="4" count="6"]
-Members Carousel - [webim_members_carousel type="alphabetical" count="12" title="Alphabetical Members" visible="6"]
+Members Grid - 
+`[webim_members_grid title="Alphabetical" type="alphabetical" col="4" count="6"]`
+Members Carousel - 
+`[webim_members_carousel type="alphabetical" count="12" title="Alphabetical Members" visible="6"]`
 
 = Groups Shortcodes :- =
-Groups Grid - [webim_groups_grid title="Most Popular Groups" type="popular" col="4" count="6"] 
-Groups Carousel - [webim_groups_carousel title="Most Active Groups" type="active" count="12" visible="6"]
+Groups Grid - 
+`[webim_groups_grid title="Most Popular Groups" type="popular" col="4" count="6"] `
+Groups Carousel - 
+`[webim_groups_carousel title="Most Active Groups" type="active" count="12" visible="6"]`
 
 == Installation ==
 
