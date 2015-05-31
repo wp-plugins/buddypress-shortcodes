@@ -3,11 +3,13 @@
 Plugin Name: Buddypress Shortcodes
 Plugin URI:  http://wordpress.webimetry.com/plugins/buddypress-shortcodes/
 Description: Buddypress Shortcodes plugin adds functionality of Shortcodes to Buddypress.
-Version: 1.1
+Version: 1.2
 Author: Webimetry Solutions
 Author URI: http://www.webimetry.com/
 License: GPL2
 */
+
+require_once( plugin_dir_path( __FILE__ ) .'/inc/settings.php' );
 
 function webim_buddypress_shortcodes_init() {
 /* ============================================================= */
@@ -15,13 +17,12 @@ function webim_buddypress_shortcodes_init() {
 /* ============================================================= */	
 require_once( plugin_dir_path( __FILE__ ) .'/inc/shortcodes.php' );
 
+
 /* ============================================================= */
 /* Add action */
 /* ============================================================= */
 add_action('media_buttons', 'webim_form',15);
 add_action('admin_enqueue_scripts', 'webim_admin_enqueue');
-add_action('wp_print_styles', 'bootstrap_css_register_styles');	
-add_action('wp_print_scripts', 'bootstrap_js_register_scripts');
 add_action('wp_print_styles', 'owl_css_register_styles');
 add_action('wp_print_scripts', 'owl_js_register_scripts');
 
@@ -57,22 +58,8 @@ function webim_form(){
 	}
 }
 
-	// END media button
+	// END media button	
 
-/* ============================================================= */
-/* Bootstrap CSS Files for Front End */
-/* ============================================================= */	 
-function bootstrap_css_register_styles() {
-	wp_register_style('css-bootstrap', plugins_url('/buddypress-shortcodes/css/bootstrap.css'));
-	wp_enqueue_style('css-bootstrap');
-}	
-/* ============================================================= */
-/* Bootstrap JS Files for Front End */
-/* ============================================================= */	 	
-function bootstrap_js_register_scripts() {
-	wp_register_script('js-bootstrap', plugins_url('/buddypress-shortcodes/js/bootstrap.js'));
-    wp_enqueue_script('js-bootstrap');
-}
 /* ============================================================= */
 /* OWL CSS Files for Front End */
 /* ============================================================= */	 

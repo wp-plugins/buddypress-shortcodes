@@ -8,7 +8,7 @@ Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A shortcodes plugin that helps you in building your own Social Network using BuddyPress Plugin.It gives you the option of using Shortcodes for BuddyPress plugin.
+BuddyPress Shortcodes helps you in building your BuddyPress website by adding functionality of Shortcodes to BuddyPress plugin.
 
 == Description ==
 
